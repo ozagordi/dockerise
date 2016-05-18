@@ -3,6 +3,7 @@ FROM ubuntu:14.04
 MAINTAINER osvaldo.zagordi@gmail.com
 
 RUN apt-get update -y && apt-get install -y \
-  seqtk
+  seqtk \
+  && rm -rf /var/lib/apt/lists/*
 
 CMD ["/usr/bin/seqtk"]

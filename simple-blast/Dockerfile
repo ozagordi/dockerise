@@ -2,7 +2,8 @@ FROM ubuntu:14.04
 MAINTAINER osvaldo.zagordi@gmail.com
 
 RUN apt-get update -y && apt-get install -y \
-    wget
+    wget \
+&& rm -rf /var/lib/apt/lists/*
 
 WORKDIR /tmp
 
