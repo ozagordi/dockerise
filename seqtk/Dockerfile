@@ -6,4 +6,5 @@ RUN apt-get update -y && apt-get install -y \
   seqtk \
   && rm -rf /var/lib/apt/lists/*
 
-CMD ["/usr/bin/seqtk"]
+#ENTRYPOINT ["/usr/bin/seqtk"]
+#CMD ["seq"]
